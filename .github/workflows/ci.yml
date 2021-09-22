@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    paths:
+      - "action.yml"
+      - ".github/workflows/ci.yml"
+
+jobs:
+  test:
+    name: Test Scalastyle download
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+
+    - name: Setup Java and Scala
+      uses: olafurpg/setup-scala@v10
+
+    - name: Download Scalastyle
+      uses: microsoft/scalastyle-download@v1.0.0
+    
+    - name: Validate Scala code
+      uses: ./
+      with:
+        scala-code-directory: ./scala-code
+        scalastye-config-directory: './scala-code/config/scalastyle_config.xml
