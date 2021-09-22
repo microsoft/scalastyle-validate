@@ -15,6 +15,7 @@ This action is useful when you need to examine your Scala code to idetify potent
 
 ### Prerequisites
 
+* Make sure you have a [Scalastyle configuration file](http://www.scalastyle.org/configuration.html) (scalastyle_config.xml) with your defined rules.
 * Make sure you have setup Java
 * Make sure you have setup Scala
 * Make sure you have downloaded Scalastyle. A suggested GitHub Action to perform this can found in this [link](https://github.com/marketplace/actions/scalastyle-download).
@@ -28,7 +29,8 @@ steps:
     - name: Validate Scala Code
       uses: microsoft/scalastyle-validate@v1.0.0
       with:
-        working-directory: './path-to-code'
+        scala-code-directory: './path-to-code'
+        scalastye-config-directory: './path-to-configfile'
         scalastyle-directory: './path-to-scalastyle'
 ```
 
@@ -36,8 +38,9 @@ steps:
 
 | Name | Description | Required | Default value |
 | --- | --- | --- | --- |
-| `working-directory` | Path for the Scala code | true | NA |
-| `working-directory` | Path where the Scalastyle jar is downloaded | false | scalastyle.jar |
+| `scala-code-directory` | Path for the Scala code | true | NA |
+| `scalastye-config-directory` | Path for the Scalastyle configuration file | true | NA |
+| `scalastyle-directory` | Path where the Scalastyle jar is downloaded. Default value assumes is in the same working directory | false | scalastyle.jar |
 
 
 ## Contributing
