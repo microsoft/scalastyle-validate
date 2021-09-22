@@ -1,14 +1,44 @@
-# Project
+# Scalastyle Validate Action
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+GitHub Action that examines your Scala code and indicates potential problems with [Scalastyle](http://www.scalastyle.org/).
 
-As the maintainer of this project, please make a few updates:
+## When to use
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This action is useful when you need to examine your Scala code to idetify potential style problems and thow an error if a warning was found.
+
+## How it works
+
+1. The GitHub Action first eximines the Scala code in a given path.
+2. The GitHub Actions checks if a warning was found. If no warning was found, then it suceeds, else it would throw an error.
+
+## Getting Started
+
+### Prerequisites
+
+* Make sure you have setup Java
+* Make sure you have setup Scala
+* Make sure you have downloaded Scalastyle. A suggested GitHub Action to perform this can found in this [link](https://github.com/marketplace/actions/scalastyle-download).
+
+A sample GitHub Action Workflow that shows the prerequisites can be found in this repository.
+
+### Usage
+
+```yml
+steps:
+    - name: Validate Scala Code
+      uses: microsoft/scalastyle-validate@v1.0.0
+      with:
+        working-directory: './path-to-code'
+        scalastyle-directory: './path-to-scalastyle'
+```
+
+### Inputs
+
+| Name | Description | Required | Default value |
+| --- | --- | --- | --- |
+| `working-directory` | Path for the Scala code | true | NA |
+| `working-directory` | Path where the Scalastyle jar is downloaded | false | scalastyle.jar |
+
 
 ## Contributing
 
