@@ -18,8 +18,8 @@ jobs:
     - name: Setup Java and Scala
       uses: olafurpg/setup-scala@v10
 
-    - name: Download Scalastyle
-      uses: microsoft/scalastyle-download@v1.0.0
+    - name: scalastyle-download
+      uses: microsoft/scala-style-download@v1.0.0
     
     - name: Validate Scala code
       uses: ./
