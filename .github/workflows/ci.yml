@@ -25,4 +25,4 @@ jobs:
       uses: ./
       with:
         scala-code-directory: ./scala-code
-        scalastye-config-directory: './scala-code/config/scalastyle_config.xml
+        scalastye-config-directory: ./scala-code/config/scalastyle_config.xml
