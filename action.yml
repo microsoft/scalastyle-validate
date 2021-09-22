@@ -17,7 +17,7 @@ runs:
   using: "composite"
   steps:
     - run: | 
-        scala_output=$(java -jar ${{ inputs.scalastyle-directory }} --config ${{ inputs.scalastye-config-directory }} ${{ inputs.cala-code-directory }})
+        scala_output=$(java -jar ${{ inputs.scalastyle-directory }} --config ${{ inputs.scalastye-config-directory }} ${{ inputs.scala-code-directory }})
         echo $scala_output
         if [[ $scala_output != *"0 warning"* ]]; then
           echo "Error!" > "Check scala style"
