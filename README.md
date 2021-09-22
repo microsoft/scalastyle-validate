@@ -26,7 +26,7 @@ A sample GitHub Action Workflow that shows the prerequisites can be found in thi
 
 ```yml
 steps:
-    - name: Validate Scala Code
+    - name: scalastyle-validate
       uses: microsoft/scalastyle-validate@v1.0.0
       with:
         scala-code-directory: './path-to-code'
