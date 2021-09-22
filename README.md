@@ -38,8 +38,8 @@ steps:
 
 | Name | Description | Required | Default value |
 | --- | --- | --- | --- |
-| `scala-code-directory` | Path for the Scala code | true | NA |
-| `scalastye-config-directory` | Path for the Scalastyle configuration file | true | NA |
+| `scala-code-directory` | Path to the Scala code | true | NA |
+| `scalastye-config-directory` | Path to the Scalastyle configuration file | true | NA |
 | `scalastyle-directory` | Path where the Scalastyle jar is downloaded. Default value assumes is in the same working directory | false | scalastyle.jar |
 
 
