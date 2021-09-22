@@ -1,4 +1,4 @@
-# Scalastyle Validate Action
+# Scalastyle Validate Action [![Build](https://github.com/microsoft/scalastyle-validate/actions/workflows/ci.yml/badge.svg)](https://github.com/microsoft/scalastyle-validate/actions/workflows/ci.yml)
 
 GitHub Action that examines your Scala code and indicates potential problems with [Scalastyle](http://www.scalastyle.org/).
 
@@ -29,9 +29,9 @@ steps:
     - name: Validate Scala Code
       uses: microsoft/scalastyle-validate@v1.0.0
       with:
-        scala-code-directory: ./path-to-code
-        scalastye-config-directory: ./path-to-configfile
-        scalastyle-directory: ./path-to-scalastyle
+        scala-code-directory: './path-to-code'
+        scalastye-config-directory: './path-to-configfile'
+        scalastyle-directory: './path-to-scalastyle'
 ```
 
 ### Inputs
