@@ -9,8 +9,8 @@ class Car
     // Class method
     def Display()
     {
-        println("Make of the Car : " + make);
-        println("Model of the Car : " + model);
-        println("Fuel capacity of the Car : " + fuel);
+       println("Make of the Car : " + make);
+       println("Model of the Car : " + model);
+       println("Fuel capacity of the Car : " + fuel);
     }
 }
