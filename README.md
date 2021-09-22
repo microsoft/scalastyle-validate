@@ -18,7 +18,7 @@ This action is useful when you need to examine your Scala code to idetify potent
 * Make sure you have a [Scalastyle configuration file](http://www.scalastyle.org/configuration.html) (scalastyle_config.xml) with your defined rules.
 * Make sure you have setup Java
 * Make sure you have setup Scala
-* Make sure you have downloaded Scalastyle. A suggested GitHub Action to perform this can found in this [link](https://github.com/marketplace/actions/scalastyle-download).
+* Make sure you have downloaded Scalastyle. A suggested GitHub Action to perform this can found [here](https://github.com/marketplace/actions/scalastyle-download).
 
 A sample GitHub Action Workflow that shows the prerequisites can be found in this repository.
 
