@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: Test Scalastyle download
+    name: Test Scalastyle Validate
     runs-on: ubuntu-latest
     
     steps:
