@@ -29,9 +29,9 @@ steps:
     - name: Validate Scala Code
       uses: microsoft/scalastyle-validate@v1.0.0
       with:
-        scala-code-directory: './path-to-code'
-        scalastye-config-directory: './path-to-configfile'
-        scalastyle-directory: './path-to-scalastyle'
+        scala-code-directory: ./path-to-code
+        scalastye-config-directory: ./path-to-configfile
+        scalastyle-directory: ./path-to-scalastyle
 ```
 
 ### Inputs
